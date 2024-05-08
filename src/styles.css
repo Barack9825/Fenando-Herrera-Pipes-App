@@ -10,10 +10,3 @@ body {
 .text-layout {
   color: var(--text-color);
 }
-
-.reversed-button .p-button-label {
-  order: 1;
-}
-.reversed-button .pi {
-  order: 2;
-}
