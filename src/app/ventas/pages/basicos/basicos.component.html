@@ -35,6 +35,11 @@
           <li>fecha | date | long</li>
           <li>fecha | date | custom</li>
         </ul>
+        <hr />
+        <ul>
+          <li>fecha | date : "long" : "GMT-6"</li>
+          <li>fecha | date : "long" : "GMT-5"</li>
+        </ul>
       </p-card>
     </div>
 
@@ -46,6 +51,13 @@
           <li>{{ fecha | date : "short" }}</li>
           <li>{{ fecha | date : "long" }}</li>
           <li>{{ fecha | date : "Y MMM dd EEEE 'at'  h:mm a" }}</li>
+        </ul>
+
+        <hr />
+        <ul>
+          <li>{{ fecha | date : "long" : "GMT-6" }}</li>
+          <li>{{ fecha | date : "long" : "GMT-5" }}</li>
+          <li>{{ fecha | date : "long" : "" : "fr" }}</li>
         </ul>
       </p-card>
     </div>
