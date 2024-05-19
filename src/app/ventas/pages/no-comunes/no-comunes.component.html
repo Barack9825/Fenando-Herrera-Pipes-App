@@ -10,6 +10,12 @@
         Saludos {{ nombre }}, es un placer
         {{ genero | i18nSelect : invitacionMap }} a nuestro evento.
       </p>
+      <button
+        pButton
+        (click)="cambiarCliente()"
+        label="Cambiar Persona"
+        class="p-button-help"
+      ></button>
     </p-fieldset>
   </div>
 
@@ -19,6 +25,12 @@
         Actualmente
         {{ clientes.length | i18nPlural : clientesMapa }}
       </p>
+      <button
+        pButton
+        (click)="borrarCliente()"
+        label="Borrar Persona"
+        class="p-button-danger"
+      ></button>
     </p-fieldset>
   </div>
 </div>
