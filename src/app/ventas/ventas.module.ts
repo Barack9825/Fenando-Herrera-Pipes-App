@@ -9,16 +9,21 @@ import { NumerosComponent } from './pages/numeros/numeros.component';
 import { OrdenarComponent } from './pages/ordenar/ordenar.component';
 
 import { MayusuculasPipe } from './pipes/mayusucula.pipe';
+import { OrdenarPipe } from './pipes/ordenar.pipe';
 import { VuelaPipe } from './pipes/vuela.pipe';
 
 @NgModule({
   declarations: [
+    //componentes
     BasicosComponent,
     NoComunesComponent,
     NumerosComponent,
     OrdenarComponent,
+
+    //pipes
     MayusuculasPipe,
-    VuelaPipe
+    OrdenarPipe,
+    VuelaPipe,
   ],
   exports: [
     BasicosComponent,
@@ -26,6 +31,6 @@ import { VuelaPipe } from './pipes/vuela.pipe';
     NumerosComponent,
     OrdenarComponent,
   ],
-  imports: [CommonModule,PrimeNgModule],
+  imports: [CommonModule, PrimeNgModule],
 })
 export class VentasModule {}
