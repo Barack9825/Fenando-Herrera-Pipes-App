@@ -9,6 +9,7 @@ import { NumerosComponent } from './pages/numeros/numeros.component';
 import { OrdenarComponent } from './pages/ordenar/ordenar.component';
 
 import { MayusuculasPipe } from './pipes/mayusucula.pipe';
+import { VuelaPipe } from './pipes/vuela.pipe';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { MayusuculasPipe } from './pipes/mayusucula.pipe';
     NoComunesComponent,
     NumerosComponent,
     OrdenarComponent,
-    MayusuculasPipe
+    MayusuculasPipe,
+    VuelaPipe
   ],
   exports: [
     BasicosComponent,
